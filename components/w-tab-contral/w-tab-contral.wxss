@@ -1,0 +1,22 @@
+/* components/w-tab-contral/w-tab-contral.wxss */
+
+.tab-contral {
+  display: flex;
+  height: 88rpx;
+  line-height: 88rpx;
+  background: orange;
+}
+
+.tab-item {
+  flex: 1;
+  text-align: center;
+}
+
+.active {
+  color: red;
+}
+
+.active {
+  color: red;
+  border-bottom: 6rpx solid red;
+}
