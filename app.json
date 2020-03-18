@@ -1,6 +1,40 @@
 {
   "pages": [
     "pages/home/home",
-    "pages/about/about"
-  ]
+    "pages/category/category",
+    "pages/cart/cart",
+    "pages/profile/profile"
+  ],
+  "tabBar": {
+    "selectedColor": "#ff5777",
+    "list": [
+      {
+      "pagePath": "pages/home/home",
+      "text": "首页",
+      "iconPath": "/asset/tabbar/home.png",
+      "selectedIconPath": "/asset/tabbar/home.png"
+      },
+
+      {
+        "pagePath": "pages/category/category",
+        "text": "分类",
+        "iconPath": "/asset/tabbar/分类.png",
+        "selectedIconPath": "/asset/tabbar/分类.png"
+      },
+
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "/asset/tabbar/购物车.png",
+        "selectedIconPath": "/asset/tabbar/购物车.png"
+      },
+
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "我的",
+        "iconPath": "/asset/tabbar/me.png",
+        "selectedIconPath": "/asset/tabbar/me.png"
+      }
+    ]
+  }
 }
