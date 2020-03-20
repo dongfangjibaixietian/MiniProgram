@@ -1,3 +1,9 @@
 <!--pages/home/home.wxml-->
-<text class='title'>niha</text>
-<navigator url='/pages/detail/detail'>跳到详情页</navigator>
+<w-swiper list="{{banners}}"/>
+
+<w-recommend recommends="{{recommends}}"/>
+
+<w-popular/>
+
+<tab-contral titles="{{titles}}"
+              bind:itemclick="handleTabClick"/>

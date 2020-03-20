@@ -1,4 +1,4 @@
-// components/w-tab-contral/w-tab-contral.js
+// components/tab-contral/tab-contral.js
 Component({
   /**
    * 组件的属性列表
@@ -10,23 +10,23 @@ Component({
     }
   },
 
-  /**
-   * 组件的初始数据
-   */
   data: {
     currentIndex:0
   },
-
-  /**
-   * 组件的方法列表
-   */
+  
   methods: {
-    handleItemClick(event){
+    handleItemClick(event) {
       const index = event.currentTarget.dataset.index;
-      this.setData({
-        currentIndex:index
-      }
+
+      this.setData (
+        {
+          currentIndex:index
+        }
       )
+
+      this.triggerEvent('itemclick',{index,title: this.properties.titles[index]},{})
     }
   }
+
+ 
 })

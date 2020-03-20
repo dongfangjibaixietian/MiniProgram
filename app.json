@@ -3,7 +3,8 @@
     "pages/home/home",
     "pages/category/category",
     "pages/cart/cart",
-    "pages/profile/profile"
+    "pages/profile/profile",
+    "components/w-swiper/w-swiper"
   ],
   "window": {
     "navigationBarBackgroundColor": "#ff5777",
@@ -26,7 +27,7 @@
       },
       {
         "pagePath": "pages/cart/cart",
-        "text": "购物车",
+        "text": "已选",
         "iconPath": "/asset/tabbar/购物车.png",
         "selectedIconPath": "/asset/tabbar/购物车.png"
       },

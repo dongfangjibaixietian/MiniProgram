@@ -5,3 +5,15 @@ export function getMultiData() {
     url: '/home/multidata'
   })
 }
+
+
+export function getGoodsDate (type,page) {
+  return request ({
+      url:'/home/data',
+      data: {
+        type,
+        page
+      }
+  })
+
+}

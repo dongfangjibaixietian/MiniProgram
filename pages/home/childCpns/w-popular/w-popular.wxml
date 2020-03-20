@@ -1,0 +1,4 @@
+<!--pages/home/childCpns/w-popular.wxml-->
+<view class="popular">
+  <image src="https://www.echartsjs.com/examples/data/thumb/map-parallel-prices.jpg" mode="widthFix"></image>
+</view>
