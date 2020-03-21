@@ -1,0 +1,4 @@
+<!--components/back-top/backtop.wxml-->
+<view class="back-top" bind:tap="handleBackTop">
+<image src="/asset/tabbar/返回顶部.png"></image>
+</view>

@@ -7,3 +7,7 @@
 
 <tab-contral titles="{{titles}}"
               bind:itemclick="handleTabClick"/>
+
+<goods goods="{{goods[currentType].list}}"/>
+
+<back-top/>

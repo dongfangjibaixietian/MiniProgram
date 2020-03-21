@@ -3,23 +3,29 @@ import {
   getGoodsDate
 } from '../../service/home.js'
 
+const types = ['pop','new','sell']
+
 Page({
   data: {
     banner: [],
     recommends: [],
-    titles: ['新药研发','其他'],
+    titles: ['流行','新款','精选'],
     goods: {
       'pop': {page:0,list:[]},
-      'others': { page: 0, list: [] },
-    }
+      'new': { page: 0, list: [] },
+      'sell': { page: 0, list: [] }
+    },
+    currentType:'pop'
   },
 
 
   onLoad: function (options) {
-    this.multidata
-    /*this.goodsdata*/
+    this.multidata()
+    this.goodsdata('pop')
+    this.goodsdata('new')
+    this.goodsdata('sell')
   },
-
+//***************************网络请求函数************************** */
  multidata() {
    getMultiData().then(res => { //请求数据
      const banners = res.data.data.banner.list;
@@ -30,14 +36,33 @@ Page({
      })
    })
  },
-
- /*goodsdata() {
+//*******************************数据请求**************************** */
+goodsdata(type){
+  const page = this.data.goods[type].page + 1;
    getGoodsDate(type, page).then(res => {
-     console.log(res)
+     
+     const list = res.data.data.list;
+     const oldList = this.data.goods[type].list;
+     oldList.push(...list)
+
+     const typeKey = `goods.${type}.list`;
+     const pageKey = `goods.${type}.page`;
+
+     this.setData({
+       [typeKey]:oldList,
+       [pageKey]:page
+     })
    })
  },
-*/
+//*********************监听函数******************* */
   handleTabClick(event) {
     const index = event.detail.index;
+    this.setData({
+      currentType: types[index]
+    })
+  },
+
+  onReachBottom() {
+    this.goodsdata(this.data.currentType)
   }
 })

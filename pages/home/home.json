@@ -1,9 +1,11 @@
 {
   "usingComponents": {
     "w-swiper": "/components/w-swiper/w-swiper",
+    "tab-contral": "/components/tab-contral/tab-contral",
+    "goods": "/components/goods/goods",
+    "back-top": "/components/back-top/backtop",
     "w-recommend": "/pages/home/childCpns/w-recommend/w-recommend",
-    "w-popular": "/pages/home/childCpns/w-popular/w-popular",
-    "tab-contral": "/components/tab-contral/tab-contral"
+    "w-popular": "/pages/home/childCpns/w-popular/w-popular"
   },
   "navigationBarTitleText": "ERP物料"
 }
