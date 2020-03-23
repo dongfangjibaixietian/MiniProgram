@@ -15,7 +15,8 @@ Page({
       'new': { page: 0, list: [] },
       'sell': { page: 0, list: [] }
     },
-    currentType:'pop'
+    currentType:'pop',
+    show:false
   },
 
 
@@ -64,5 +65,14 @@ goodsdata(type){
 
   onReachBottom() {
     this.goodsdata(this.data.currentType)
+  },
+
+  onPageScroll(options) {
+    const flag = options.scrollTop >= 1000
+    if (flag != this.data.show){
+      this.setData({
+        show: options.scrollTop >= 1000
+      })
+    }
   }
 })

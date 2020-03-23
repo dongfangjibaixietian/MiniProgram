@@ -10,4 +10,4 @@
 
 <goods goods="{{goods[currentType].list}}"/>
 
-<back-top/>
+<back-top wx:if = "{{show}}"/>
