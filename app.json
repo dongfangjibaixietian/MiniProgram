@@ -22,14 +22,14 @@
       {
         "pagePath": "pages/category/category",
         "text": "分类",
-        "iconPath": "/asset/tabbar/分类.png",
-        "selectedIconPath": "/asset/tabbar/分类.png"
+        "iconPath": "/asset/tabbar/category.png",
+        "selectedIconPath": "/asset/tabbar/category.png"
       },
       {
         "pagePath": "pages/cart/cart",
         "text": "已选",
-        "iconPath": "/asset/tabbar/购物车.png",
-        "selectedIconPath": "/asset/tabbar/购物车.png"
+        "iconPath": "/asset/tabbar/cart.png",
+        "selectedIconPath": "/asset/tabbar/cart.png"
       },
       {
         "pagePath": "pages/profile/profile",
@@ -39,5 +39,5 @@
       }
     ]
   },
-  "sitemapLocation": "sitemap25.json"
+  "sitemapLocation": "sitemap91.json"
 }

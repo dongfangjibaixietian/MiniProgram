@@ -15,5 +15,4 @@ export function getGoodsDate (type,page) {
         page
       }
   })
-
 }
